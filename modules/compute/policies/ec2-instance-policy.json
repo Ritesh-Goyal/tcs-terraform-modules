@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "EC2",
+        "Effect": "Allow",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:DescribeLogStreams",
+          "ec2:Describe*",
+          "s3:Get*",
+          "s3:List*",
+          "s3:Put*",
+          "s3:Delete*",
+          "personalize:List*",
+          "personalize:Get*",
+          "personalize-runtime:Get*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
+  
