@@ -1,11 +1,12 @@
 locals {
   owner        = "ritesh"
-  module_name  = "${var.env}-${local.owner}"
-  ssh_key_pair = "ritesh-devops"
+  module_name  = "${var.env}-${local.owner}" //stage-ritesh
+  ssh_key_pair = "ritesh-aws-key"
 }
 
 module "networking" {
   source          = "../modules/networking"
+
   env             = var.env
   cidr            = var.cidr
   private_subnets = var.private_subnets

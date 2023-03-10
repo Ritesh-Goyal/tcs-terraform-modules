@@ -5,7 +5,7 @@ variable "env" {
 
 variable "region" {
   description = "AWS region"
-  default     = "us-west-1"
+  default     = "ap-south-1"
   type        = string
 }
 
@@ -36,15 +36,15 @@ variable "ssh_allowed_ips" {
 
 variable "cidr" {
   type    = string
-  default = "10.2.0.0/16"
+  default = "10.2.0.0/16" // 10.2 --> 10.x
 }
 
 variable "private_subnets" {
   type    = list(any)
-  default = ["10.2.1.0/24", "10.2.2.0/24", "10.2.3.0/24"]
+  default = ["10.2.1.0/24", "10.2.2.0/24", "10.2.3.0/24"]  // 10.2 --> 10.x
 }
 
 variable "public_subnets" {
   type    = list(any)
-  default = ["10.2.101.0/24", "10.2.102.0/24", "10.2.103.0/24"]
+  default = ["10.2.101.0/24", "10.2.102.0/24", "10.2.103.0/24"] // 10.2 --> 10.x
 }

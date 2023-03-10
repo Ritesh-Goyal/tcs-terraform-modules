@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket  = "core-infrastructure-devops-tfstate"
-    key     = "stage/terraform.tfstate"
-    region  = "us-west-1"
+    bucket = "ritesh-aws-infrastructure-tfstate"
+    key    = "stage/terraform.tfstate"
+    region = "ap-south-1"
   }
 }

@@ -1,6 +1,6 @@
 locals {
   owner       = "ritesh"
-  module_name = "${var.env}-${local.owner}"
+  module_name = "${var.env}-${local.owner}" //stage-ritesh
 }
 
 # An IAM role that we attach to the EC2 Instances in the cluster

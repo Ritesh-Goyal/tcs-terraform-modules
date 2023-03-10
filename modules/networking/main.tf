@@ -1,6 +1,6 @@
 locals {
   owner       = "ritesh"
-  module_name = "${var.env}-${local.owner}"
+  module_name = "${var.env}-${local.owner}" // stage-ritesh
 }
 // TODO break public and private into separate AZs
 data "aws_availability_zones" "available" {}
